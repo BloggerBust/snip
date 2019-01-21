@@ -1,0 +1,6 @@
+#+BRAIN_PARENTS: major_modes major_modes
+
+#+TITLE:GEOChat
+- anyone can post
+- each post has a set of coordinates attached
+- posts are not encrypted

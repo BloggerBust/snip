@@ -1,0 +1,10 @@
+#+BRAIN_PARENTS: minor_modes
+
+#+TITLE:Flag
+- A message with transaction id {tx_id} can be flagged by sending a message
+  to topic flag_{tx_id}.
+- The flag tx should be signed with an rsa key
+- The flag tx should have a flag value. These might be anything, but I guess
+  NSFW, NSFL, Racism would be some common flags.
+- The minor mode could filter messages that have been flagged >x times
+- The flag tx might be encrypted, if the major mode uses an encryption scheme (needs more thought)

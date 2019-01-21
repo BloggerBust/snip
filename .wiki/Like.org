@@ -1,0 +1,8 @@
+#+BRAIN_PARENTS: minor_modes
+#+TITLE:Like
+- A message with transaction id {tx_id} can be liked by sending a message to
+  topic like_{tx_id}.
+- The like message should be signed with an rsa key to prevent spamming
+- The minor mode could filter messages that have a bad like-dislike rating.
+- The message could contain a value to allow dislike (-1) or unlike (0),
+  depending on further design

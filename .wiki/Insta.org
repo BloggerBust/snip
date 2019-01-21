@@ -1,0 +1,7 @@
+#+BRAIN_PARENTS: major_modes major_modes major_modes
+
+#+TITLE:Instagram Feed
+
+- Topic is locked to single posting key. If key is not used to sign message,
+  message is deemed to be invalid.
+- posts are not encrypted

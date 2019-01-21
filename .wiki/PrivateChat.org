@@ -1,0 +1,5 @@
+#+BRAIN_PARENTS: major_modes
+
+#+TITLE:Private Chat
+- only posts signed with a known private key is shown on screen
+- posts are encrypted with a shared key.

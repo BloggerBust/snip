@@ -1,0 +1,8 @@
+#+BRAIN_PARENTS: minor_modes
+
+#+TITLE:Comment
+- A message with transaction id {tx_id} can be commented on by sending a message
+  to topic comments_{tx_id}.
+- A comment can have its own comments
+- The comment should be signed with an rsa key
+- The comment might be encrypted, if the major mode uses an encryption scheme (needs more thought)

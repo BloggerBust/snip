@@ -1,0 +1,14 @@
+#+BRAIN_FRIENDS: minor_modes
+
+#+BRAIN_CHILDREN: GeoChat PublicForum PrivateChat Insta
+
+#+TITLE:Major Modes
+
+A topic is chosen to publish messages to. The major mode will contain rules
+about the messages posted in this topic. A topic could have a human readable
+name - say geo_chat_worldwide, and a major mode being geo_chat. A user could
+subscribe their device to this channel using this major mode, and the phone
+would then be able to show the user a coherent set of posts, since the phone
+knows how to handle the posts sent to this topic. If the mode cannot parse the
+message, we can assume it is malicious or an error, and the post doesn't need to
+be shown.

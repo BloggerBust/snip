@@ -1,0 +1,9 @@
+#+BRAIN_CHILDREN: Like Comment Flag
+
+#+BRAIN_FRIENDS: major_modes
+
+#+TITLE:Minor Modes
+
+A minor mode is an extension to a major mode. It uses the tangle to communicate
+extra information, but doesn't use the main topic used in the major mode. A user
+can choose to install a major mode, but it isn't enforced.

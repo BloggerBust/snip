@@ -1,0 +1,6 @@
+#+BRAIN_PARENTS: major_modes major_modes
+
+#+TITLE:Public Discussion
+- Anyone can post to public topic and be shown to people subscribing to topic
+- posts shouldn't be encrypted, as all discussion is public
+- posts should be signed using RSA
