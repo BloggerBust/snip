@@ -1,0 +1,25 @@
+#+BRAIN_PARENTS: Implementation
+
+
+
+#+TITLE:Protocols
+
+When a device subscribes to a topic, there are a number of different models
+available:
+
+1. [[https://blog.iota.org/introducing-masked-authenticated-messaging-e55c1822d50e][masked authenticated messages]] - messages that are sent to a specific address
+   must be read. The address changes over time. A password can be optionally
+   added/changed to limit access to a stream. Only one private key can send
+   valid packets to the addresses.
+2. [[https://medium.com/@samuel.rufinatscha/mam-lite-a-more-flexible-messaging-protocol-for-iota-562fdd318e1d][mam-lite]] - messages must be read from a topic that changes over time. Anyone
+   can send to the topics, a major should decide which messages to show or
+   hide.
+   
+We could also think about:
+
+1. Signal protocol - diffie helman exchange with public one-time keys to set up
+   1 to 1 conversation.
+2. Fixed public topics - anyone can send to a fixed topic, major modes should
+   choose which messages to show or hide.
+   
+Major modes must be able to share protocol code

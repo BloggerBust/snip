@@ -1,3 +1,5 @@
+#+BRAIN_PARENTS: index
+
 #+BRAIN_CHILDREN: Like Comment Flag
 
 #+BRAIN_FRIENDS: major_modes

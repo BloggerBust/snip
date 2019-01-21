@@ -1,0 +1,10 @@
+#+BRAIN_PARENTS: Implementation
+
+A snapshot is a periodic reset of all messages on IOTA. We could assume that a
+snapshot will be an [[https://blog.iota.org/coming-up-local-snapshots-7018ff0ed5db][arbitrary event]] in the future, but let's think about it
+anyway. Possible solutions:
+
+1. an IPFS minor mode for persistent storage, using the current device
+2. a piece of server software that handles message storage. It is possible to
+   [[https://medium.com/bytes-io/iota-proof-of-work-remote-vs-local-explained-1cbd89392a79][outsource PoW]] in iota, so outsourcing storage to the same machine sounds like
+   a small step.

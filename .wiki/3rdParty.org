@@ -1,0 +1,16 @@
+#+BRAIN_PARENTS: index Implementation
+
+#+TITLE:3rd party code
+
+When posting to IOTA, a seed must be stored on the device of a user. A major
+mode should not have to do key management, but this should be handled by a core
+part of the software. It should:
+
+1. securely store the iota seed
+2. hold known public keys (contact list)
+3. ask the user for confirmation for every tx that a mode generates
+4. provide (Part of) the iota web api.
+
+Metamask is a good example of this. In IOTA, everyone seems obsessed about
+putting devices on tangle, no real effort is being put into putting humans on
+there. However, there might be some interest if we pitch the idea there.
