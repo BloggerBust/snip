@@ -1,0 +1,5 @@
+:RESOURCES:
+- [[https://docs.iota.org/introduction/tangle/consensus][Consensus (iota.org)]]
+:END:
+#+BRAIN_PARENTS: Protocols
+

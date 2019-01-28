@@ -1,0 +1,11 @@
+:RESOURCES:
+- [[https://en.wikipedia.org/wiki/Gossip_protocol][Gossip (Wikipedia)]]
+:END:
+#+BRAIN_PARENTS: Protocols
+
+IOTA uses the Gossip protocol for transaction
+propagation. Transactions of sufficient weight can efficiently
+propagate across the cluster. This is how PoW is related to the
+underlying Gossip protocol. Without PoW a message will not have the
+initial weight that is needed for the Gossip protocol to begin
+propagation.

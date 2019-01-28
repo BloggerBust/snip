@@ -1,0 +1,5 @@
+#+BRAIN_PARENTS: Protocols
+
+[[https://en.wikipedia.org/wiki/BEEP][Blocks Extensible Exchange Protocol (BEEP)]] is a framework for creating
+network application protocols. It was designed to compete with HTPP as
+a standard underlying protocol for networked applications.

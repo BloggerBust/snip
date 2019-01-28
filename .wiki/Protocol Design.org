@@ -1,0 +1,19 @@
+:RESOURCES:
+- [[http://www.catb.org/esr/writings/taoup/html/ch05s04.html][The Art of Unix Programming - Application Protocol Metaformats]]
+- [[http://www.catb.org/esr/writings/taoup/html/ch05s03.html][The Art of Unix Programming - Application Protocol Design]]
+- [[https://www.rfc-editor.org/rfc/rfc3117.txt][On the Design of Application Protocols RFC Memo]]
+- [[http://epdoc.utsp.utwente.nl/66783/1/Sinderen95design.pdf][On Designing Application Protocols]]
+:END:
+#+BRAIN_PARENTS: Implementation
+
+I was interested in building our protocol on top of IOTA using BEEP
+and extending it to be a suitable protocol for social networks in
+general. That way we abstract away the fact that we are building on
+top of the IOTA. Any application that speaks BEEP will be able to
+interopt with our social network. Only, on further reading and
+investigation BEEP seems to have [[https://en.wikipedia.org/wiki/BEEP][lost community interest back in
+2016]]. Now I think we should just Extend the IOTA / MAM2 protocols into
+our own Distributed Social Networking Protocol. The way to do that is
+to use TangleChat's needs as a basis for where to begin in building a
+generic distributed social networking protocol and hopefully we get it
+right.

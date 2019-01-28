@@ -1,25 +1,32 @@
+#+BRAIN_CHILDREN: Gossip MAM%20Plus Consensus MAM BEEP
+
+
 #+BRAIN_PARENTS: Implementation
 
 
 
 #+TITLE:Protocols
 
-When a device subscribes to a topic, there are a number of different models
-available:
+When a device subscribes to a topic, there are a number of different
+models available:
 
-1. [[https://blog.iota.org/introducing-masked-authenticated-messaging-e55c1822d50e][masked authenticated messages]] - messages that are sent to a specific address
-   must be read. The address changes over time. A password can be optionally
-   added/changed to limit access to a stream. Only one private key can send
-   valid packets to the addresses.
-2. [[https://medium.com/@samuel.rufinatscha/mam-lite-a-more-flexible-messaging-protocol-for-iota-562fdd318e1d][mam-lite]] - messages must be read from a topic that changes over time. Anyone
-   can send to the topics, a major should decide which messages to show or
-   hide.
+1. Gossip - A peer-2-peer communication protocol where messages
+   propagate through a network like gossip in an office or a virus
+   during an epidemic.
+2. Consensus - The IOTA consensus protocol adds integrity to the
+   Gossip message stream.
+3. Masked Authenticated Messages- is a second layer data communication
+   protocol which adds functionality to emit and access an encrypted
+   data stream, like RSS, over the Tangle (IOTA’s distributed ledger).
+4. [[https://medium.com/@samuel.rufinatscha/mam-lite-a-more-flexible-messaging-protocol-for-iota-562fdd318e1d][mam-lite]] - messages must be read from a topic that changes over
+   time. Anyone can send to the topics, a major should decide which
+   messages to show or hide.
    
 We could also think about:
 
-1. Signal protocol - diffie helman exchange with public one-time keys to set up
-   1 to 1 conversation.
-2. Fixed public topics - anyone can send to a fixed topic, major modes should
-   choose which messages to show or hide.
+1. Signal protocol - diffie helman exchange with public one-time keys
+   to set up 1 to 1 conversation.
+2. Fixed public topics - anyone can send to a fixed topic, major modes
+   should choose which messages to show or hide.
    
 Major modes must be able to share protocol code

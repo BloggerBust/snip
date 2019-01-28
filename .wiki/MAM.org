@@ -1,0 +1,27 @@
+:RESOURCES:
+- [[https://blog.iota.org/introducing-masked-authenticated-messaging-e55c1822d50e][Masked Authenticated Messages]]
+:END:
+#+BRAIN_PARENTS: Protocols
+
+A second layer data communication protocol which adds functionality to
+emit and access an encrypted data stream, like RSS, over the Tangle
+(IOTA’s distributed ledger).
+
+Encryption is achieved using a [[https://www.imperialviolet.org/2013/07/18/hashsig.html][merkel based signature scheme]]. Each
+message is encrypted with a one-time pad that consists of the channel
+ID and the index of the key used to sign the message; an additional
+nonce may be used as a revocable encryption key. The resulting cipher
+hash is signed using the private key belonging to one of the leaves of
+the merkel tree. The encrypted payload, the signature and the leaf’s
+siblings are then published to the tangle where anyone knowing the
+symmetric key can find and decrypt it.
+
+Signature verification consists of validating the signature and
+verifying that the signature belongs to one of the tree’s leaves. If
+signature verification fails, the entire message is deemed
+invalid. Otherwise, the message is unmasked.
+
+Messages that are sent to a specific address
+must be read. The address changes over time. A password can be
+optionally added/changed to limit access to a stream. Only one private
+key can send valid packets to the addresses.

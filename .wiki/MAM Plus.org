@@ -1,0 +1,8 @@
+:RESOURCES:
+- [[https://blog.iota.org/iota-entangled-update-jan-22-de236eaed292][IOTA Entabled - update Jan 22]]
+- [[https://www.iota.org/research/roadmap][IOTA Research Roadmap Engineering MAM+]]
+:END:
+#+BRAIN_PARENTS: Protocols
+
+MAM Plus implementation for C/C++ is [[https://github.com/iotaledger/entangled][Part of the entabled library (GitHub)]]
+
