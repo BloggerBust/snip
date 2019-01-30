@@ -1,4 +1,6 @@
-#+BRAIN_CHILDREN: Gossip MAM%20Plus Consensus MAM BEEP
+:RESOURCES:
+:END:
+#+BRAIN_CHILDREN: Gossip MAM%20Plus Consensus MAM BEEP XMPP
 
 
 #+BRAIN_PARENTS: Implementation

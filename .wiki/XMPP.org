@@ -1,0 +1,11 @@
+#+BRAIN_PARENTS: Protocols
+
+Definitions
+- XMPP :: [[https://xmpp.org/about/technology-overview.html][eXtensible Messaging and Presence Protocol]]
+- Xep :: [[https://xmpp.org/extensions/][XMPP Extensions specifications]]
+- [[https://xmpp.org/extensions/xep-0387.html][XEP-0387]] :: XMPP Compliance Suites 2018
+
+Notes
+- Originally known as [[https://xmpp.org/about/history.html][Jabber]] XMPP has been adopted by a diverse set of [[https://xmpp.org/uses/][use cases]] including [[https://xmpp.org/uses/internet-of-things][IOT]] and [[https://xmpp.org/uses/social][Social Networking]]
+- I have peeked at their [[http://logs.xmpp.org/xsf/][posted chat logs]] and [[https://xmpp.org/community/events.html][up comming events]]. It is easy to conclude that they have an [[https://xmpp.org/community/][active community]].
+- There are a number of [[https://xmpp.org/software/servers.html][community supported XMPP servers projects]] that we might be able to extend to satisfy [[https://gitlab.com/tanevanwifferen/tanglechat/issues/17][User Story #17 - As a user, I don't want my phone to do PoW or store the entire tangle, so I want to have a server app running on my laptop that does this for me]]
