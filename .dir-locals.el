@@ -1,0 +1,5 @@
+((nil . ((projectile-project-compilation-cmd . "bazel build //cli:snipCli")
+         (projectile-project-test-cmd . "bazel test //test:snip")
+         (projectile-project-run-cmd . "bazel run //cli:snipCli")
+         ))
+ )
