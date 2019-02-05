@@ -1,0 +1,4 @@
+* Dependencies
+- [[https://docs.bazel.build/versions/master/bazel-overview.html][Bazel]] :: An open-source build and test tool.
+- [[https://www.boost.org/][Boost C++ libraries]] :: used for unit testing and mocks
+  - Boost.test
