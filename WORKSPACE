@@ -1,6 +1,6 @@
 workspace(name = "com_github_bloggerbust_snip")
 
-load('@bazel_tools//tools/build_defs/repo:git.bzl', 'git_repository')
+load('@bazel_tools//tools/build_defs/repo:git.bzl', 'git_repository', 'new_git_repository')
 
 git_repository(
     name = "com_github_nelhage_rules_boost",
@@ -11,16 +11,20 @@ git_repository(
 load("@com_github_nelhage_rules_boost//:boost/boost.bzl", "boost_deps")
 boost_deps()
 
-# TODO add a git repository dependency for Turtle mocks library https://github.com/mat007/turtle
-# TODO add local repository to entagled
+new_git_repository(
+    name = "com_github_mat007_turtle",
+    commit = "5c0f29012511339ba5cc2672f99a1356c5387b62",
+    remote = "https://github.com/mat007/turtle.git",
+    #build_file = "com_github_mat007_turtle.BUILD"
+    build_file_content = """
+cc_library(
+    name = "turtle",
+    hdrs = glob(["include/turtle/**/*.hpp"]),
+    copts = ["-Iexternal/com_github_mat007_turtle/include"],
+    deps = ["@boost//:test"],
+    visibility = ["//visibility:public"]
+)
+"""
+)
 
-# local_repository(
-#   name = "entangled",
-#   path = "~/dev/entangled"
-# )
-
-# git_repository(
-#     name = "rules_iota",
-#     commit = "39eeaf4fad15929b0fcc88b8fc473925a6bd9060",
-#     remote = "https://github.com/iotaledger/rules_iota.git",
-# )
+# TODO add local repository to entagled @org_iota_entangled

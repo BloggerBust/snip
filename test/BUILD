@@ -1,5 +1,6 @@
 cc_test(
   name = "snip",
   srcs = glob(["*.cpp"]),
-  deps = ["//lib:snip", "@boost//:test"]
+  copts = ["-Iexternal/com_github_mat007_turtle/include"],
+  deps = ["//lib:snip", "@boost//:test", "@com_github_mat007_turtle//:turtle"]
 )
